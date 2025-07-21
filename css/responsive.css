@@ -4,14 +4,257 @@
   * Add the media rule and the styles that belong to the MOBILE view only
 */
 
-@media (min-width: 1024px) {
-  /* .top-navigation .trigram {
-    display: none;
-  } */
 
   /* 👇👇👇 Add the styles that belong to the DESKTOP view only beneath 👇👇👇 */
+
+  @media (min-width: 1024px) {
+  .top-navigation .trigram {
+    display: none;
+  }
+
+  .top-navigation ul li:hover {
+    font-weight: bold;
+  }
+
+  .teammate-social-icons div:hover {
+    background-color: black;
+  }
+
+  footer .social-icons div:hover {
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-contacts > div a:hover {
+    color: white;
+    text-decoration: underline
+  }
 }
 
 /* 👇👇👇 Add the media rule and the styles that are common within the TABLET and MOBILE views beneath 👇👇👇 */
 
+@media (min-width: 768px) and (max-width: 1023px){
+
+  .top-navigation ul {
+    display: none;
+  }
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .top-navigation ul li:hover {
+    font-weight: bold;
+  }
+
+  .portfolio-item {
+    display: flex;
+    flex-direction: row;
+  }
+
+  .portfolio-item-info .item-title {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .portfolio-item-info .item-description {
+    display: flex;
+    justify-content: center;
+  }
+
+  .teammates-list {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .teammate {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+  }
+
+  .teammate-img-wrapper {
+    display: flex;
+    width: 324px;
+    height: 230px;
+  }
+
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .teammate-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .teammates-list::before {
+    display: none;
+  }
+
+  .teammates-list::after {
+    display: none;
+  }
+
+  .teammate-social-icons div:hover {
+    background-color: black;
+  }
+
+  footer .social-icons .icon {
+    display: flex;
+    background-color: white;
+  }
+
+  footer .social-icons {
+    display: flex;
+    justify-content: center;
+    gap: 0px;
+  }
+
+  .social-icons span {
+    display: none;
+  }
+
+  footer .social-icons div:hover {
+    font-weight: bold;
+    color: white;
+  }
+
+  .footer-contacts > div a:hover {
+    color: white;
+    text-decoration: underline
+  }
+}
+
 /* 👇👇👇 Add the media rule and the styles that belong to the MOBILE view only beneath 👇👇👇 */
+
+
+@media (min-width: 360px) AND (max-width: 767px) {
+
+  .top-navigation ul {
+    display: none;
+  }
+
+
+  .portfolio-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .portfolio-item-info .item-title {
+    display: flex;
+    justify-content: center;
+  }
+
+  .portfolio-item-info .item-description {
+    display: flex;
+  }
+
+  .teammates-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teammates-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+  }
+
+  .teammates-list::before {
+    display: none;
+  }
+
+  .teammates-list::after {
+    display: none;
+  }
+
+  .teammates-list-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .teammate {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 10px;
+    margin-left: 0;
+    border: 1px solid black;
+    padding: 15px;
+    width: 100%;
+  }
+
+  .teammate-data {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+  }
+
+  .teammate-info {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .teammate-social-icons {
+    display: flex;
+    gap: 15px;
+  }
+
+  .teammate-social-icons div:hover {
+    background-color: black;
+  }
+
+  .teammate-img-wrapper {
+    display: flex;
+    width: 100%;
+  }
+
+  .footer-content {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .social-icons {
+    display: flex;
+    flex-direction: column;
+  }
+
+  footer .social-icons div:hover {
+    color: white;
+  }
+
+  .footer-contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+  .footer-contacts > div a:hover {
+    color: white;
+    text-decoration: underline;
+  }
+}
